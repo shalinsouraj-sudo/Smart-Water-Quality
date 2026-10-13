@@ -908,7 +908,7 @@ async function runAnalysis(){
     pct.textContent = '30%';
     txt.textContent = 'Extracting image colors…';
 
-    const response = await fetch('/api/analyze', {
+    const response = await fetch('https://smart-water-quality.onrender.com/api/analyze', {
       method: 'POST',
       body: formData
     });
